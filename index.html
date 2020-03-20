@@ -1,29 +1,29 @@
 <html>
-    <head>
-    </head>
-    <body>
-        <p>Click the button to get your coordinates,</p>
 
-        <button onclick="getLocation: ">Try It</button>
+<head>
+    <title>GoPeterborough</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-        <p id="demo"></p>
+    <a href="index.html" id="logo" target="_blank"><img src="Logo.PNG"></a>
 
-        <script>var x = document.getElementById("demo");
-            function getLocation() {
-              if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-              } else {
-                x.innerHTML = "Geolocation is not supported by this browser.";
-              }
-            }
-            
-            function showPosition(position) {
-              x.innerHTML = "Latitude: " + position.coords.latitude +
-              "<br>Longitude: " + position.coords.longitude;
-            }
-            </script>
+    <nav>
+        <ul>
+            <li><a href="#logo"><i class="icon-home"></i>Home</a></li>
+            <li><a href="#about"><i class="icon-user"></i>About Peterborough</a></li>
+            <li><a href="#portfolio"><i class="icon-thumbs-up-alt"></i>Things to Do</a></li>
+            <li><a href="#services"><i class="icon-gear"></i>Things to See</a></li>
+            <li><a href="#gallery"><i class="icon-picture"></i>Where to Stay</a></li>
+            <li><a href="#contact"><i class="icon-phone"></i>Where to Eat</a></li>
+        </ul>
+    </nav>
 
-            <p <a href="map.html">>Map</a></p>
+    <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
+    <input type="checkbox" id="toggle-1">
 
-    </body>
+</head>
+
+<body>
+
+</body>
+
 </html>
