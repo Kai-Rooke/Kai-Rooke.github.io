@@ -1,7 +1,6 @@
 * {
     text-decoration: none;
     list-style: none;
-    margin: 0px;
     padding: 0px;
     outline: none;
 }
@@ -160,11 +159,7 @@ footer {
     transition: all 0.5s ease 0s;
 }
 
-@media only screen and (max-width: 1440px) {
-    section {
-        max-width: 95%;
-    }
-}
+@media only screen and (max-width: 1440px) {}
 
 @media only screen and (max-width: 980px) {
     header {
@@ -222,21 +217,6 @@ footer {
     }
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "Nav logo . .";
-}
-
-.Nav {
-    grid-area: Nav;
-}
-
-.logo {
-    grid-area: logo;
-}
-
 @media only screen and (max-width: 980px) {
     .content {
         width: 90%;
@@ -265,11 +245,8 @@ footer {
     label {
         padding: 5px 0px;
     }
-    #logo {
-        font-size: 20px;
-    }
     nav {
-        top: 47px;
+        top: 0px;
     }
 }
 

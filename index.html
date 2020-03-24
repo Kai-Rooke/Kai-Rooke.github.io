@@ -15,15 +15,41 @@
         </ul>
     </nav>
 
-    <a href="index.html" id="logo" target="_blank"><img src="Logo.PNG"></a>
+    <a href="index.html" id="logo" target="_blank"><img src="LogoSmall.PNG"></a>
 
 
     <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
     <input type="checkbox" id="toggle-1">
 
+    <script language="javascript">
+        {
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {
+                    slideIndex = 1
+                }
+                x[slideIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        }
+    </script>
+
 </head>
 
 <body>
+
+    <img class="mySlides" src="Peterborough-Cathedral.jpg">
+    <img class="mySlides" src="NeneValleyRailway.jpg">
+    <img class="mySlides" src="GreyhoundStadium.jpg">
+    <img class="mySlides" src="PeterboroughMuseum.jpg">
 
 </body>
 
