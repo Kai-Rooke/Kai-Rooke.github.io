@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
     <nav>
         <ul>
             <li><a href="#logo"><i class="icon-home"></i>Home</a></li>
@@ -16,15 +17,14 @@
         </ul>
     </nav>
 
-    <a href="index.html" id="logo" target="_blank"><img src="LogoSmall.PNG"></a>
-
-
     <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
     <input type="checkbox" id="toggle-1">
+
+    <a href="index.html" id="logo" target="_blank"><img src="LogoSmall.PNG"></a>
 </head>
 
 <body>
-    <div class="carousel">
+    <div class="carousel" role="listbox" style=" width:60%; height: 500px !important;">
         <div><img src="NeneValleyRailway.jpg" alt="Girl in a jacket"></div>
         <div><img src="PeterboroughMuseum.jpg" alt="Girl in a jacket"></div>
         <div><img src="Peterborough-Cathedral.jpg" alt="Girl in a jacket"></div>
@@ -40,7 +40,7 @@
                 infinite: true,
                 speed: 300,
                 slidesToShow: 1,
-                adaptiveHeight: true,
+                adaptiveHeight: false,
                 autoplay: true,
                 autoplaySpeed: 2500,
             });
