@@ -41,8 +41,59 @@
     </div>
 
     <div>
-        <h2>The city and its region have an important place in the history of Britain, but modern Peterborough is prospering. We have a passion for this great city and invite you to share it through these pages. Go ahead and explore what the city has to offer....</h2>
+        <h2>The city and its region have an important place in the history of Britain, but modern Peterborough is prospering. We have a passion for this great city and invite you to share it through these pages. Go ahead and explore what the city has to offer!</h2>
     </div>
+
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Accommodations')">Accommodations</button>
+        <button class="tablinks" onclick="openTab(event, 'Entertainment')">Landmarks and Entertainment</button>
+        <button class="tablinks" onclick="openTab(event, 'Food')">Restaurants and Others</button>
+        <button class="tablinks" onclick="openTab(event, 'Events')">Events in Peterborough</button>
+        <button class="tablinks" onclick="openTab(event, 'Shopping')">Shopping Locations</button>
+    </div>
+
+    <div id="Accommodations" class="tabcontent">
+        <h3>Accommodations</h3>
+        <p>Where to stay in Peterborough.</p>
+    </div>
+
+    <div id="Entertainment" class="tabcontent">
+        <h3>Landmarks And Entertainment</h3>
+        <p>Things to see or do in Peterborough.</p>
+    </div>
+
+    <div id="Food" class="tabcontent">
+        <h3>Restaurants And Others</h3>
+        <p>Places to eat in Peterborough.</p>
+    </div>
+
+    <div id="Events" class="tabcontent">
+        <h3>Events in Peterborough</h3>
+        <p>What's going on in Peterborough.</p>
+    </div>
+
+    <div id="Shopping" class="tabcontent">
+        <h3>Shopping Locations</h3>
+        <p>Places to shop in peterborough.</p>
+    </div>
+
+    <script>
+        function openTab(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
 
     <script type="text/javascript" src="jQuery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
