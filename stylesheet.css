@@ -376,6 +376,30 @@ footer {
     padding: 10px;
 }
 
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "Nav Stuff Stuff ." "Nav Stuff Stuff ." "Stuff Stuff Stuff .";
+}
+
+.Nav {
+    grid-area: Nav;
+}
+
+.Stuff {
+    grid-area: Stuff;
+}
+
+.Stuff {
+    grid-area: Stuff;
+}
+
+.Stuff {
+    grid-area: Stuff;
+}
+
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.8);

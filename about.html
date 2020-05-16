@@ -26,109 +26,11 @@
 
     <a href="index.html" id="logo" target="_blank"><img src="LogoSmall.PNG"></a>
 
-    <div class="carousel" role="listbox" style=" width:60%; height: 500px !important;">
-        <div><img src="NeneValleyRailway.jpg" alt="Girl in a jacket"></div>
-        <div><img src="PeterboroughMuseum.jpg" alt="Girl in a jacket"></div>
-        <div><img src="Peterborough-Cathedral.jpg" alt="Girl in a jacket"></div>
-    </div>
-
-    <div>
-        <h2></h2>
-    </div>
-
-    <div>
-        <h2></h2>
-    </div>
-
-    <div>
-        <h2></h2>
-    </div>
-
-    <div>
-        <h1>Search Peterborough Here</h1>
-    </div>
-    <!-- Tab links -->
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Accommodations')">Accommodations</button>
-        <button class="tablinks" onclick="openTab(event, 'Entertainment')">Landmarks and Entertainment</button>
-        <button class="tablinks" onclick="openTab(event, 'Food')">Restaurants and Others</button>
-        <button class="tablinks" onclick="openTab(event, 'Events')">Events in Peterborough</button>
-        <button class="tablinks" onclick="openTab(event, 'Shopping')">Shopping Locations</button>
-    </div>
-
-    <div id="Accommodations" class="tabcontent">
-        <h3>Accommodations</h3>
-        <p>Where to stay in Peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <div id="Entertainment" class="tabcontent">
-        <h3>Landmarks And Entertainment</h3>
-        <p>Things to see or do in Peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <div id="Food" class="tabcontent">
-        <h3>Restaurants And Others</h3>
-        <p>Places to eat in Peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <div id="Events" class="tabcontent">
-        <h3>Events in Peterborough</h3>
-        <p>What's going on in Peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <div id="Shopping" class="tabcontent">
-        <h3>Shopping Locations</h3>
-        <p>Places to shop in peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <script>
-        function openTab(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
-
-
-    <script type="text/javascript" src="jQuery.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('.carousel').slick({
-                dots: false,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                adaptiveHeight: true,
-                autoplay: true,
-                autoplaySpeed: 2500,
-            });
-        });
-    </script>
-
-    <br>
-
-    <div class="grid-container">
-        <div class="grid-item"><img src="Peterborough-Greyhounds.jpg"></div>
-        <div class="grid-item"><img src="Autofest.jpg"></div>
-        <div class="grid-item"><img src="race-for-life.jpg"></div>
-        <div class="grid-item">Peterborough Greyhounds <br><br> Visit the race track for a riveting and exhilarating experience on a dog's day out!</div>
-        <div class="grid-item">East of England Autofest 2020 <br><br> The Autofest has a new date!</div>
-        <div class="grid-item">Cancer Research UK’s Peterborough <br> Race for Life <br><br> Help raise funds for Cancer Research!</div>
+    <div class="grid-container2">
+        <div class="Nav"></div>
+        <div class="Stuff"> hello </div>
+        <div class="Stuff"> hello </div>
+        <div class="Stuff"> hello </div>
     </div>
 
 </body>
