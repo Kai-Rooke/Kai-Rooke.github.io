@@ -384,6 +384,34 @@ footer {
     grid-template-areas: "Nav Info Empty ." "Nav Info Empty ." ". Info Empty .";
 }
 
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "Nav Logo Logo Empty" "Nav Carousel Carousel Empty" "Nav Other-Stuff Other-Stuff Empty";
+}
+
+.Logo {
+    grid-area: Logo;
+}
+
+.Empty {
+    grid-area: Empty;
+}
+
+.Carousel {
+    grid-area: Carousel;
+}
+
+.Other-Stuff {
+    grid-area: Other-Stuff;
+}
+
+.Nav {
+    grid-area: Nav;
+}
+
 .information {
     text-align: center;
     margin-left: auto;
