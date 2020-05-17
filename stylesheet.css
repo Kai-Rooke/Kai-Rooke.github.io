@@ -381,23 +381,24 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1px 1px;
-    grid-template-areas: "Nav Stuff Stuff ." "Nav Stuff Stuff ." "Stuff Stuff Stuff .";
+    grid-template-areas: "Nav Info Empty ." "Nav Info Empty ." ". Info Empty .";
+}
+
+.information {
+    text-align: center;
+    margin-left: auto;
 }
 
 .Nav {
     grid-area: Nav;
 }
 
-.Stuff {
-    grid-area: Stuff;
+.Info {
+    grid-area: Info;
 }
 
-.Stuff {
-    grid-area: Stuff;
-}
-
-.Stuff {
-    grid-area: Stuff;
+.Empty {
+    grid-area: Empty;
 }
 
 .grid-item {
