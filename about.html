@@ -9,31 +9,135 @@
 
 </head>
 
-<label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
-<input type="checkbox" id="toggle-1">
-
-<div class="grid-container2">
-    <div class="Nav">
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="icon-home"></i>Home</a></li>
-                <li><a href="about.html"><i class="icon-user"></i>About Peterborough</a></li>
-                <li><a href="activities.html"><i class="icon-thumbs-up-alt"></i>Things to Do</a></li>
-                <li><a href="landmarks.html"><i class="icon-gear"></i>Things to See</a></li>
-                <li><a href="accomadation.html"><i class="icon-picture"></i>Where to Stay</a></li>
-                <li><a href="food.html"><i class="icon-phone"></i>Where to Eat</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="Info">
-        <a href="index.html" id="logo" target="_blank"><img src="LogoSmall.PNG"></a>
-
-        <div class=information>
-            Peterborough is a cathedral city in Cambridgeshire, England,
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="Empty"></div>
-</div>
+    </div>
+
+    <a href="index.html" id="logo" target="_blank"><img src="LogoSmall.PNG"></a>
+
+
+    <div class="carousel" role="listbox" style=" width:60%; height: 500px !important;">
+        <div><img src="NeneValleyRailway.jpg" alt="Girl in a jacket"></div>
+        <div><img src="PeterboroughMuseum.jpg" alt="Girl in a jacket"></div>
+        <div><img src="Peterborough-Cathedral.jpg" alt="Girl in a jacket"></div>
+    </div>
+
+    <div>
+        <h2>Peterborough is a rapidly-growing city based in the heart of rural east England and with a population of around 200,000. It shares borders with Cambridgeshire, Lincolnshire, Northamptonshire and Rutland.</h2>
+    </div>
+
+    <div>
+        <h2>Delve into these pages and you’ll find a rundown of where and when to enjoy the many historic buildings and locations that combine to create our heritage; our award-winning green spaces and our fabulous events and activities that continue to get
+            national recognition. </h2>
+    </div>
+
+    <div>
+        <h2>The city and its region have an important place in the history of Britain, but modern Peterborough is prospering. We have a passion for this great city and invite you to share it through these pages. Go ahead and explore what the city has to offer!</h2>
+    </div>
+
+    <div>
+        <h1>Search Peterborough Here</h1>
+    </div>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Accommodations')">Accommodations</button>
+        <button class="tablinks" onclick="openTab(event, 'Entertainment')">Landmarks and Entertainment</button>
+        <button class="tablinks" onclick="openTab(event, 'Food')">Restaurants and Others</button>
+        <button class="tablinks" onclick="openTab(event, 'Events')">Events in Peterborough</button>
+        <button class="tablinks" onclick="openTab(event, 'Shopping')">Shopping Locations</button>
+    </div>
+
+    <div id="Accommodations" class="tabcontent">
+        <h3>Accommodations</h3>
+        <p>Where to stay in Peterborough.</p>
+        <input type="text" placeholder="Search..">
+    </div>
+
+    <div id="Entertainment" class="tabcontent">
+        <h3>Landmarks And Entertainment</h3>
+        <p>Things to see or do in Peterborough.</p>
+        <input type="text" placeholder="Search..">
+    </div>
+
+    <div id="Food" class="tabcontent">
+        <h3>Restaurants And Others</h3>
+        <p>Places to eat in Peterborough.</p>
+        <input type="text" placeholder="Search..">
+    </div>
+
+    <div id="Events" class="tabcontent">
+        <h3>Events in Peterborough</h3>
+        <p>What's going on in Peterborough.</p>
+        <input type="text" placeholder="Search..">
+    </div>
+
+    <div id="Shopping" class="tabcontent">
+        <h3>Shopping Locations</h3>
+        <p>Places to shop in peterborough.</p>
+        <input type="text" placeholder="Search..">
+    </div>
+
+    <script>
+        function openTab(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+
+    <script type="text/javascript" src="jQuery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 2500,
+            });
+        });
+    </script>
+
+    <br>
+
+    <div class="grid-container">
+        <div class="grid-item"><img src="Peterborough-Greyhounds.jpg"></div>
+        <div class="grid-item"><img src="Autofest.jpg"></div>
+        <div class="grid-item"><img src="race-for-life.jpg"></div>
+        <div class="grid-item">Peterborough Greyhounds <br><br> Visit the race track for a riveting and exhilarating experience on a dog's day out!</div>
+        <div class="grid-item">East of England Autofest 2020 <br><br> The Autofest has a new date!</div>
+        <div class="grid-item">Cancer Research UK’s Peterborough <br> Race for Life <br><br> Help raise funds for Cancer Research!</div>
+    </div>
 
 </body>
 
