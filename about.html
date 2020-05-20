@@ -1,5 +1,3 @@
-<html>
-
 <head>
     <title>GoPeterborough</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -10,135 +8,72 @@
 </head>
 
 <body>
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div></div>
-        </div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 
     <a href="index.html" id="logo" target="_blank"><img src="LogoSmall.PNG"></a>
 
-
-    <div class="carousel" role="listbox" style=" width:60%; height: 500px !important;">
-        <div><img src="NeneValleyRailway.jpg" alt="Girl in a jacket"></div>
-        <div><img src="PeterboroughMuseum.jpg" alt="Girl in a jacket"></div>
-        <div><img src="Peterborough-Cathedral.jpg" alt="Girl in a jacket"></div>
-    </div>
-
-    <div>
-        <h2>Peterborough is a rapidly-growing city based in the heart of rural east England and with a population of around 200,000. It shares borders with Cambridgeshire, Lincolnshire, Northamptonshire and Rutland.</h2>
-    </div>
-
-    <div>
-        <h2>Delve into these pages and you’ll find a rundown of where and when to enjoy the many historic buildings and locations that combine to create our heritage; our award-winning green spaces and our fabulous events and activities that continue to get
-            national recognition. </h2>
-    </div>
-
-    <div>
-        <h2>The city and its region have an important place in the history of Britain, but modern Peterborough is prospering. We have a passion for this great city and invite you to share it through these pages. Go ahead and explore what the city has to offer!</h2>
-    </div>
-
-    <div>
-        <h1>Search Peterborough Here</h1>
-    </div>
-    <!-- Tab links -->
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Accommodations')">Accommodations</button>
-        <button class="tablinks" onclick="openTab(event, 'Entertainment')">Landmarks and Entertainment</button>
-        <button class="tablinks" onclick="openTab(event, 'Food')">Restaurants and Others</button>
-        <button class="tablinks" onclick="openTab(event, 'Events')">Events in Peterborough</button>
-        <button class="tablinks" onclick="openTab(event, 'Shopping')">Shopping Locations</button>
-    </div>
-
-    <div id="Accommodations" class="tabcontent">
-        <h3>Accommodations</h3>
-        <p>Where to stay in Peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <div id="Entertainment" class="tabcontent">
-        <h3>Landmarks And Entertainment</h3>
-        <p>Things to see or do in Peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <div id="Food" class="tabcontent">
-        <h3>Restaurants And Others</h3>
-        <p>Places to eat in Peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <div id="Events" class="tabcontent">
-        <h3>Events in Peterborough</h3>
-        <p>What's going on in Peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <div id="Shopping" class="tabcontent">
-        <h3>Shopping Locations</h3>
-        <p>Places to shop in peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <script>
-        function openTab(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
-
-
-    <script type="text/javascript" src="jQuery.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('.carousel').slick({
-                dots: false,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                adaptiveHeight: true,
-                autoplay: true,
-                autoplaySpeed: 2500,
-            });
-        });
-    </script>
+    <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Peterborough</a></li>
+        <li><a href="activities.html">Things to Do</a></li>
+        <li><a href="food.html">Where to Eat</a></li>
+        <li><a href="accommodation.html">Where to Stay</a></li>
+        <li><a href="shopping.html">Where to Shop</a></li>
+        <li><a href="events.html">Events</a></li>
+    </ul>
 
     <br>
 
-    <div class="grid-container">
-        <div class="grid-item"><img src="Peterborough-Greyhounds.jpg"></div>
-        <div class="grid-item"><img src="Autofest.jpg"></div>
-        <div class="grid-item"><img src="race-for-life.jpg"></div>
-        <div class="grid-item">Peterborough Greyhounds <br><br> Visit the race track for a riveting and exhilarating experience on a dog's day out!</div>
-        <div class="grid-item">East of England Autofest 2020 <br><br> The Autofest has a new date!</div>
-        <div class="grid-item">Cancer Research UK’s Peterborough <br> Race for Life <br><br> Help raise funds for Cancer Research!</div>
+    <div class="paragraph">Peterborough is a cathedral city in Cambridgeshire, England, with a population of 202,110 in 2017. Historically part of Northamptonshire, it is 76 miles (122 km) north of London, on the River Nene which flows into the North Sea 30 miles (48 km) to
+        the north-east. The railway station is an important stop on the East Coast Main Line between London and Edinburgh. The city is also 70 miles (110 km) east of Birmingham, 38 miles (61 km) east of Leicester, 81 miles (130 km) south of Kingston upon
+        Hull and 65 miles (105 km) west of Norwich. <br> <br>The local topography is flat, and in some places the land lies below sea level, for example in parts of the Fens to the east of Peterborough. Human settlement in the area began before the Bronze
+        Age, as can be seen at the Flag Fen archaeological site to the east of the current city centre, also with evidence of Roman occupation. The Anglo-Saxon period saw the establishment of a monastery, Medeshamstede, which later became Peterborough
+        Cathedral. <br><br>The population grew rapidly after the railways arrived in the 19th century, and Peterborough became an industrial centre, particularly known for its brick manufacture. After the Second World War, growth was limited until designation
+        as a New Town in the 1960s. Housing and population are expanding and a £1 billion regeneration of the city centre and immediately surrounding area is under way. Industrial employment has fallen since then, a significant proportion of new jobs
+        being in financial services and distribution.Peterborough is a rapidly-growing city based in the heart of rural east England and with a population of around 200,000. It shares borders with Cambridgeshire, Lincolnshire, Northamptonshire and Rutland.</h2>
+        Etymology The original name of the town was Medeshamstede. The town's name changed to Burgh from the late tenth century, possibly after Abbot Kenulf had built a defensive wall around the abbey, and eventually developed into the form Peterborough; the
+        town does not appear to have been a borough until the 12th century. The contrasting form Gildenburgh is also found in the 12th century history of the abbey, the Peterborough version of the Anglo-Saxon Chronicle (see Peterborough Chronicle below)
+        and in a history of the abbey by the monk Hugh Candidus. <br><br> Early history Present-day Peterborough is the latest in a series of settlements which have at one time or other benefited from its site where the Nene leaves large areas
+        of permanently drained land for the fens. Remains of Bronze Age settlement and what is thought to be religious activity can be seen at the Flag Fen archaeological site to the east of the city centre. The Romans established a fortified garrison
+        town at Durobrivae on Ermine Street, five miles (8 km) to the west in Water Newton, around the middle of the 1st century AD. Durobrivae's earliest appearance among surviving records is in the Antonine Itinerary of the late 2nd century. There was
+        also a large 1st century Roman fort at Longthorpe, designed to house half a legion, or about 3,000 soldiers; it may have been established as early as around AD 44–48. Peterborough was an important area of ceramic production in the Roman period,
+        providing Nene Valley Ware that was traded as far away as Cornwall and the Antonine Wall, Caledonia.<br><br> Peterborough is shown by its original name Medeshamstede to have possibly been an Anglian settlement before AD 655, when Sexwulf founded
+        a monastery on land granted to him for that purpose by Peada of Mercia, who converted to Christianity and was briefly ruler of the smaller Middle Angles sub-group. His brother Wulfhere murdered his own sons, similarly converted and then finished
+        the monastery by way of atonement.<br><br> Hereward the Wake rampaged through the town in 1069 or 1070. Outraged, Abbot Turold erected a fort or castle, which, from his name, was called Mont Turold: this mound, or hill, is on the outside of the
+        deanery garden, now called Tout Hill, although in 1848 Tot-hill or Toot Hill. The abbey church was rebuilt and greatly enlarged in the 12th century. The Peterborough Chronicle, a version of the Anglo-Saxon one, contains unique information about
+        the history of England after the Norman conquest, written here by monks in the 12th century. This is the only known prose history in English between the conquest and the later 14th century. The burgesses received their first charter from "Abbot
+        Robert" – probably Robert of Sutton (1262–1273). The place suffered materially in the war between King John and the confederate barons, many of whom took refuge in the monastery here and in Crowland Abbey, from which sanctuaries they were forced
+        by the king's soldiers, who plundered the religious houses and carried off great treasures. The abbey church became one of Henry VIII's retained, more secular, cathedrals in 1541, having been assessed at the Dissolution (in the King's Books) as
+        having revenue of £1,972.7s.0¾d per annum.<br><br>Peterborough Cathedral (1118–1375), the Early English Gothic west front When civil war broke out, Peterborough was divided between supporters of King Charles I and the Long Parliament. The city
+        lay on the border of the Eastern Association of counties which sided with Parliament, and the war reached Peterborough in 1643 when soldiers arrived in the city to attack Royalist strongholds at Stamford and Crowland. The Royalist forces were
+        defeated within a few weeks and retreated to Burghley House, where they were captured and sent to Cambridge. While the Parliamentary soldiers were in Peterborough, however, they ransacked the cathedral, destroying the Lady Chapel, chapter house,
+        cloister, high altar and choir stalls, as well as mediaeval decoration and records.<br><br> Housing and sanitary improvements were effected under the provisions of an Act of Parliament passed in 1790; and an Act was passed in 1839 to build a gaol
+        to replace the two that previously stood. After the dissolution the dean and chapter, who succeeded the abbot as lords of the manor, appointed a high bailiff and the constables and other borough officers were elected at their court leet; but this
+        ended when the municipal borough was incorporated in 1874 under the government of a mayor, six aldermen and eighteen councillors. Among the privileges claimed by the abbot as early as the 13th century was that of having a prison for felons taken
+        in the Soke of Peterborough. In 1576 Bishop Edmund Scambler sold the lordship of the hundred of Nassaburgh, which was coextensive with the Soke, to Queen Elizabeth I, who gave it to Lord Burghley, and from that time until the 19th century he and
+        his descendants, the Earls and Marquesses of Exeter, had a separate gaol for prisoners arrested in the Soke. The abbot formerly held four fairs, of which two, St. Peter's Fair, granted in 1189 and later held on the second Tuesday and Wednesday
+        in July, and the Brigge Fair, granted in 1439 and later held on the first Tuesday, Wednesday and Thursday in October, were purchased by the corporation from the Ecclesiastical Commissioners in 1876. The Bridge Fair, as it is now known, granted
+        to the abbey by King Henry VI, survives. Prayers for the opening of the fair were once said at the morning service in the cathedral, followed by a civic proclamation and a sausage lunch at the town hall which still takes place. The mayor traditionally
+        leads a procession from the town hall to the fair where the proclamation is read, asking all persons to "behave soberly and civilly, and to pay their just dues and demands according to the laws of the realm and the rights of the City of Peterborough".<br><br>        Modern history Railway lines began operating locally during the 1840s, but it was the 1850 opening of the Great Northern Railway's line from London to York that transformed Peterborough from a market town to an industrial centre. Lord Exeter had
+        opposed the railway passing through Stamford, so Peterborough, situated between two main terminals at London and Doncaster, increasingly developed as a regional hub.<br><br>Coupled with vast local clay deposits, the railway enabled large-scale
+        brick-making and distribution to take place. The area was the UK's leading producer of bricks for much of the twentieth century. Brick-making had been a small seasonal craft since the early nineteenth century, but during the 1890s successful experiments
+        at Fletton using the harder clays from a lower level had resulted in a much more efficient process. The market dominance during this period of the London Brick Company, founded by the prolific Scottish builder and architect John Cathles Hill,
+        gave rise to some of the country's most well-known landmarks, all built using the ubiquitous Fletton Brick. Perkins Engines was established in Peterborough in 1932 by Frank Perkins, creator of the Perkins diesel engine. Thirty years later it employed
+        more than a tenth of the population of Peterborough, mainly at Eastfield. Baker Perkins had relocated from London to Westwood, now the site of HM Prison Peterborough, in 1903, followed by Peter Brotherhood to Walton in 1906; both manufacturers
+        of industrial machinery, they too became major employers in the city. British Sugar remains headquartered in Woodston, although the beet sugar factory, which opened there in 1926, was closed in 1991.<br><br> The Norwich and Peterborough (N&P)
+        was formed by the merger of the Norwich Building Society and the Peterborough Building Society in 1986. It was the ninth largest building society at the time of its merger into the Yorkshire Group in 2011. N&P continued to operate under its own
+        brand administered at Lynch Wood until 2018. Prior to merger with the Midlands Co-op in 2013, Anglia Regional, the UK's fifth largest co-operative society, was also based in Peterborough, where it was established in 1876. The combined society
+        began trading as Central England Co-operative in 2014. <br><br>Designated a New Town in 1967, Peterborough Development Corporation was formed in partnership with the city and county councils to house London's overspill population in new townships
+        sited around the existing urban area. There were to be four townships, one each at Bretton (originally to be called Milton, a hamlet in the Middle Ages), Orton, Paston/ Werrington and Castor. The last of these was never built, but a fourth, called
+        Hampton, is now taking shape south of the city. It was decided that the city should have a major indoor shopping centre at its heart. Planning permission was received in late summer 1976 and Queensgate, containing over 90 stores and including
+        parking for 2,300 cars, was opened by Queen Beatrix of the Netherlands in 1982. 34 miles (55 km) of urban roads were planned and a network of high-speed landscaped thoroughfares, known as parkways, was constructed. <br><br>Peterborough's population
+        grew by 45.4% between 1971 and 1991. New service-sector companies like Thomas Cook and Pearl Assurance were attracted to the city, ending the dominance of the manufacturing industry as employers. An urban regeneration company named Opportunity
+        Peterborough, under the chairmanship of Lord Mawhinney, was set up by the Office of the Deputy Prime Minister in 2005 to oversee Peterborough's future development. Between 2006 and 2012 a £1 billion redevelopment of the city centre and surrounding
+        areas was planned. The master plan provided guidelines on the physical shaping of the city centre over the next 15–20 years. Proposals are still progressing for the north of Westgate, the south bank and the station quarter, where Network Rail
+        is preparing a major mixed use development. Whilst recognising that the reconfiguration of the relationship between the city and station was critical, English Heritage found the current plans for Westgate unconvincing and felt more thought should
+        be given to the vitality of the historic core. <br><br>With the city expanding, in July 2005 the council adopted a new statutory development plan. Its aim is to accommodate an additional 22,000 homes, 18,000 jobs and over 40,000 people living
+        in Peterborough by 2020. The newly developing Hampton township will be completed, there will be a 1,500-home development at Stanground and a further 1,200-home development at Paston.
+
     </div>
 
-</body>
 
-</html>
+</body>
