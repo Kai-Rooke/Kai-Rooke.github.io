@@ -1,0 +1,113 @@
+<head>
+    <title>GoPeterborough</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+
+</head>
+
+<body>
+
+    <a href="index.html" id="logo" target="_blank"><img src="LogoSmall.PNG"></a>
+
+    <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Peterborough</a></li>
+        <li><a href="activities.html">Things to Do</a></li>
+        <li><a href="food.html">Where to Eat</a></li>
+        <li><a href="accommodation.html">Where to Stay</a></li>
+        <li><a href="shopping.html">Where to Shop</a></li>
+        <li><a href="events.html">Events</a></li>
+    </ul>
+
+
+
+    <div class="carousel" role="listbox" style=" width:60%; height: 500px !important;">
+        <div><img src="LongthorpeTower.jpg" alt="Girl in a jacket"></div>
+        <div><img src="NenePark.jpg" alt="Girl in a jacket"></div>
+        <div><img src="FlagFen.jpg" alt="Girl in a jacket"></div>
+    </div>
+
+    <script type="text/javascript" src="jQuery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 2500,
+            });
+        });
+    </script>
+
+    <div class="paragraph">
+        <h2>Here is a rundown of where and when to enjoy the many historic buildings and locations that combine to create our heritage; our award-winning green spaces and our fabulous events and activities that continue to get national recognition. </h2>
+    </div>
+
+    <div class="paragraph">
+        <h2>The city and its region have an important place in the history of Britain, but modern Peterborough is prospering. We have a passion for this great city and invite you to share it through these pages. Go ahead and explore what the city has to offer!</h2>
+    </div>
+
+    <br><br>
+
+    <h3 class="paragraph2 ">Accommodations</h3>
+    <p class="paragraph2 ">Where to stay in Peterborough.</p>
+    <div class="searchBar">
+        <input type="text" placeholder="Search..">
+    </div>
+
+    <br><br>
+
+    <div id="map"></div>
+    <div id="msg"></div>
+    <script>
+        // Initialize and add the map
+        var map;
+
+        function initMap() {
+            // The map, centered on Central Park
+            const center = {
+                lat: 40.774102,
+                lng: -73.971734
+            };
+            const options = {
+                zoom: 15,
+                scaleControl: true,
+                center: center
+            };
+            map = new google.maps.Map(
+                document.getElementById('map'), options);
+            // Locations of landmarks
+            const dakota = {
+                lat: 40.7767644,
+                lng: -73.9761399
+            };
+            const frick = {
+                lat: 40.771209,
+                lng: -73.9673991
+            };
+            // The markers for The Dakota and The Frick Collection
+            var mk1 = new google.maps.Marker({
+                position: dakota,
+                map: map
+            });
+            var mk2 = new google.maps.Marker({
+                position: frick,
+                map: map
+            });
+        }
+    </script>
+
+    <!--Load the API from the specified URL -- remember to replace YOUR_API_KEY-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSz_cPgOu2vrcKxiAlD4w1bLFQt6jvLHc&callback=initMap">
+    </script>
+
+    <br>
+    <br>
+</body>
