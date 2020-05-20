@@ -47,67 +47,65 @@
     </script>
 
     <div class="paragraph">
-        <h2>Here is a rundown of where and when to enjoy the many historic buildings and locations that combine to create our heritage; our award-winning green spaces and our fabulous events and activities that continue to get national recognition. </h2>
-    </div>
+        <h2>Whether it’s fine restaurants, pub food, a light snack in a bar or late night entertainment Peterborough has a great selection of places to eat and drink. Taste from tables around the world with a spicy Mexican, a fragrant Thai, a creamy curry,
+            stylish Italian or hearty English - we can offer them all. For a romantic treat, try one of our floating restaurants down by the river or if you’re off to the theatre, catch a pre-performance supper at Resit! Vegan Kitchen at the Key Theatre.
+            And if you’re looking for the tastiest street food then be sure to pay the City Market a visit. Here you’ll find more than 140 traders covering a range of shopping delights such as women's, men's and children's clothing, haberdashery, flowers,
+            fresh local fruit and vegetables, confectionery and home...</h2>
 
-    <div class="paragraph">
-        <h2>The city and its region have an important place in the history of Britain, but modern Peterborough is prospering. We have a passion for this great city and invite you to share it through these pages. Go ahead and explore what the city has to offer!</h2>
-    </div>
+        <br><br>
 
-    <br><br>
+        <h3 class="paragraph2 ">Accommodations</h3>
+        <p class="paragraph2 ">Where to stay in Peterborough.</p>
+        <div class="searchBar">
+            <input type="text" placeholder="Search..">
+        </div>
 
-    <h3 class="paragraph2 ">Accommodations</h3>
-    <p class="paragraph2 ">Where to stay in Peterborough.</p>
-    <div class="searchBar">
-        <input type="text" placeholder="Search..">
-    </div>
+        <br><br>
 
-    <br><br>
+        <div id="map"></div>
+        <div id="msg"></div>
+        <script>
+            // Initialize and add the map
+            var map;
 
-    <div id="map"></div>
-    <div id="msg"></div>
-    <script>
-        // Initialize and add the map
-        var map;
+            function initMap() {
+                // The map, centered on Central Park
+                const center = {
+                    lat: 40.774102,
+                    lng: -73.971734
+                };
+                const options = {
+                    zoom: 15,
+                    scaleControl: true,
+                    center: center
+                };
+                map = new google.maps.Map(
+                    document.getElementById('map'), options);
+                // Locations of landmarks
+                const dakota = {
+                    lat: 40.7767644,
+                    lng: -73.9761399
+                };
+                const frick = {
+                    lat: 40.771209,
+                    lng: -73.9673991
+                };
+                // The markers for The Dakota and The Frick Collection
+                var mk1 = new google.maps.Marker({
+                    position: dakota,
+                    map: map
+                });
+                var mk2 = new google.maps.Marker({
+                    position: frick,
+                    map: map
+                });
+            }
+        </script>
 
-        function initMap() {
-            // The map, centered on Central Park
-            const center = {
-                lat: 40.774102,
-                lng: -73.971734
-            };
-            const options = {
-                zoom: 15,
-                scaleControl: true,
-                center: center
-            };
-            map = new google.maps.Map(
-                document.getElementById('map'), options);
-            // Locations of landmarks
-            const dakota = {
-                lat: 40.7767644,
-                lng: -73.9761399
-            };
-            const frick = {
-                lat: 40.771209,
-                lng: -73.9673991
-            };
-            // The markers for The Dakota and The Frick Collection
-            var mk1 = new google.maps.Marker({
-                position: dakota,
-                map: map
-            });
-            var mk2 = new google.maps.Marker({
-                position: frick,
-                map: map
-            });
-        }
-    </script>
+        <!--Load the API from the specified URL -- remember to replace YOUR_API_KEY-->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSz_cPgOu2vrcKxiAlD4w1bLFQt6jvLHc&callback=initMap">
+        </script>
 
-    <!--Load the API from the specified URL -- remember to replace YOUR_API_KEY-->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSz_cPgOu2vrcKxiAlD4w1bLFQt6jvLHc&callback=initMap">
-    </script>
-
-    <br>
-    <br>
+        <br>
+        <br>
 </body>
