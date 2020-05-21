@@ -21,12 +21,12 @@
         <li><a href="events.html">Events</a></li>
     </ul>
 
-
+    <br>
 
     <div class="carousel" role="listbox" style=" width:60%; height: 500px !important;">
-        <div><img src="NeneValleyRailway.jpg" alt="Girl in a jacket"></div>
-        <div><img src="PeterboroughMuseum.jpg" alt="Girl in a jacket"></div>
-        <div><img src="Peterborough-Cathedral.jpg" alt="Girl in a jacket"></div>
+        <div><img src="CrownInn.jpg" alt="Girl in a jacket"></div>
+        <div><img src="FerryMeadowsCamping.jpg" alt="Girl in a jacket"></div>
+        <div><img src="DragonflyHotel.jpg" alt="Girl in a jacket"></div>
     </div>
 
     <script type="text/javascript" src="jQuery.min.js"></script>
@@ -47,95 +47,62 @@
     </script>
 
     <div class="paragraph">
-        <h2>Peterborough is a rapidly-growing city based in the heart of rural east England and with a population of around 200,000. It shares borders with Cambridgeshire, Lincolnshire, Northamptonshire and Rutland.</h2>
-    </div>
+        <h2>Peterborough does events extremely well. Visitors flock to the city from all over the county to enjoy established cultural events like the Italian Festival and Diwali Festival. The annual Heritage Festival is another huge draw that includes activities
+            for the children and reenactments, and as a result Peterborough has a wide variety of accommodation across the city centre and surrounding beautiful villages and rural areas. Much of Peterborough's accommodation that is listed on the website
+            is inspected by VisitEngland or AA national accreditation schemes. All accommodation has full descriptions and the facilities available.</h2>
 
-    <div class="paragraph">
-        <h2>Delve into these pages and you’ll find a rundown of where and when to enjoy the many historic buildings and locations that combine to create our heritage; our award-winning green spaces and our fabulous events and activities that continue to get
-            national recognition. </h2>
-    </div>
-
-    <div class="paragraph">
-        <h2>The city and its region have an important place in the history of Britain, but modern Peterborough is prospering. We have a passion for this great city and invite you to share it through these pages. Go ahead and explore what the city has to offer!</h2>
-    </div>
-
-    <div>
-        <h1>Search Peterborough Here</h1>
-    </div>
-    <!-- Tab links -->
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Accommodations')">Accommodations</button>
-        <button class="tablinks" onclick="openTab(event, 'Entertainment')">Landmarks and Entertainment</button>
-        <button class="tablinks" onclick="openTab(event, 'Food')">Restaurants and Others</button>
-        <button class="tablinks" onclick="openTab(event, 'Events')">Events in Peterborough</button>
-        <button class="tablinks" onclick="openTab(event, 'Shopping')">Shopping Locations</button>
-        <button type="button" disabled>Press One of the Options to Search!</button>
-    </div>
-
-    <div id="Accommodations" class="tabcontent">
-        <h3 class="paragraph2 ">Accommodations</h3>
-        <p class="paragraph2 ">Where to stay in Peterborough.</p>
+        <br><br>
+        <h2 class="paragraph2 ">Where to eat in Peterborough.</h2>
         <div class="searchBar">
             <input type="text" placeholder="Search..">
         </div>
-    </div>
 
-    <div id="Entertainment" class="tabcontent">
-        <h3>Landmarks And Entertainment</h3>
-        <p>Things to see or do in Peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
+        <br><br>
 
-    <div id="Food" class="tabcontent">
-        <h3>Restaurants And Others</h3>
-        <p>Places to eat in Peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
+        <div id="map"></div>
+        <div id="msg"></div>
+        <script>
+            // Initialize and add the map
+            var map;
 
-    <div id="Events" class="tabcontent">
-        <h3>Events in Peterborough</h3>
-        <p>What's going on in Peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <div id="Shopping" class="tabcontent">
-        <h3>Shopping Locations</h3>
-        <p>Places to shop in peterborough.</p>
-        <input type="text" placeholder="Search..">
-    </div>
-
-    <script>
-        function openTab(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+            function initMap() {
+                // The map, centered on Central Park
+                const center = {
+                    lat: 40.774102,
+                    lng: -73.971734
+                };
+                const options = {
+                    zoom: 15,
+                    scaleControl: true,
+                    center: center
+                };
+                map = new google.maps.Map(
+                    document.getElementById('map'), options);
+                // Locations of landmarks
+                const dakota = {
+                    lat: 40.7767644,
+                    lng: -73.9761399
+                };
+                const frick = {
+                    lat: 40.771209,
+                    lng: -73.9673991
+                };
+                // The markers for The Dakota and The Frick Collection
+                var mk1 = new google.maps.Marker({
+                    position: dakota,
+                    map: map
+                });
+                var mk2 = new google.maps.Marker({
+                    position: frick,
+                    map: map
+                });
             }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
+        </script>
 
-    <br>
-    <br>
-    <div class="paragraph2 "><img src="Peterborough-Greyhounds.jpg "></div>
-    <div class="paragraph2 ">
-        <h4>Peterborough Greyhounds <br><br> Visit the race track for a riveting and exhilarating experience on a dog's day out!</h4>
-    </div>
-    <br>
-    <div class="paragraph2 "><img src="Autofest.jpg "></div>
-    <div class="paragraph2 ">
-        <h4>East of England Autofest 2020 <br><br> The Autofest has a new date!</h4>
-    </div>
-    <br>
-    <div class="paragraph2 "><img src="race-for-life.jpg "></div>
-    <div class="paragraph2 ">
-        <h4>Cancer Research UK’s Peterborough <br> Race for Life <br><br> Help raise funds for Cancer Research!</h4>
-    </div>
-    <br>
-    <br>
+        <!--Load the API from the specified URL -- remember to replace YOUR_API_KEY-->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSz_cPgOu2vrcKxiAlD4w1bLFQt6jvLHc&callback=initMap">
+        </script>
+
+        <br>
+        <br>
 </body>
