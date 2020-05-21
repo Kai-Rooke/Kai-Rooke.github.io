@@ -749,3 +749,20 @@ footer {
         left: 20
     }
 }
+
+@media screen and (max-width: 400px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+    #logo {
+        position: absolute;
+        left: 0;
+    }
+    .Carousel {
+        left: 0
+    }
+    .tab {
+        left: 20
+    }
+}
