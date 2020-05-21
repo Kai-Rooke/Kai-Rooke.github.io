@@ -745,4 +745,7 @@ footer {
     .Carousel {
         left: 0
     }
+    .tab {
+        left: 20
+    }
 }
