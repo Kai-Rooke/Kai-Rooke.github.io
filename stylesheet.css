@@ -739,6 +739,7 @@ footer {
         float: none;
     }
     #logo {
+        position: absolute;
         left: 0;
     }
     .Carousel {
